@@ -23,7 +23,6 @@ using namespace std;
         return false;
     }
 
-  public:
     vector<int> eventualSafeNodes(int V, vector<int> adj[]) {
 /*        // BRUTFORCE APPROACH
         vector<int>ans;
@@ -66,9 +65,7 @@ using namespace std;
         for(int i = 0; i<V; i++){
             
             if(!vis[i])
-            {
                 dfs(i, adj, vis, pathvis, checkSafe);
-            }
         }
         
         for(int i = 0; i<V; i++){
