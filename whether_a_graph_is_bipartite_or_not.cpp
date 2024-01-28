@@ -5,7 +5,20 @@ using namespace std;
 
 // problem link -> https://www.geeksforgeeks.org/problems/bipartite-graph/1
 
-    bool solve(int idx, vector<int>adj[], vector<int>& col){
+    bool solvedfs(int idx, vector<int>adj[], vector<int>& col, int incol){
+        col[idx] = incol;
+        
+        for(auto it:adj[idx]){
+            if(col[it] == col[idx]) return false;
+            
+            else if(col[it] == -1){
+                if(solvedfs(it, adj, col, !incol) == false) return false;
+            }
+        }
+        return true;
+    }
+
+    bool solvebfs(int idx, vector<int>adj[], vector<int>& col){
 
         queue<int> q;
         q.push(idx);
@@ -40,7 +53,8 @@ using namespace std;
 // this for loop is needed to check for the component thing.
         for(int i = 0; i<V; i++){
             if(colored[i] == -1){
-                if(solve(i, adj, colored) == false)    return false;
+                // if(solvebfs(i, adj, colored) == false)    return false;
+                if(solvedfs(i, adj, colored, 0) == false)    return false;
                 else{
                     
                 }
