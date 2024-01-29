@@ -9,6 +9,10 @@ using namespace std;
 // Time complexity -> O(V + E) [same as dfs]
 // space complexity -> O(V)
 
+/* when to apply topological sort algo -> 
+                                        whenever in question it says that "something before something (prerequisite)" {then topological sort should comes in mind}
+*/
+
     void dfs(int node, vector<int>& vis, vector<int> adj[], stack<int>& st)
     {
         vis[node] = 1;

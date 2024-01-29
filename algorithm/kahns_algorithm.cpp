@@ -4,8 +4,12 @@
 using namespace std;
 
 // Time complexity -> O(V + E) [same as BFS]
-
 // space complexity -> O(V)
+
+/* when to apply topological sort algo (kahn's algo) -> 
+                                        whenever in question it says that "something before something (prerequisite)" {then topological sort should comes in mind}
+*/
+
 // topological sort -> using BFS known as KAHN's ALGORITHM
 	vector<int> topoSort(int v, vector<int>adj[]){
 	    
