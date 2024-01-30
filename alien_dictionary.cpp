@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<queue>
 using namespace std;
 
 // problem link -> https://www.geeksforgeeks.org/problems/alien-dictionary/1
