@@ -9,6 +9,10 @@ using namespace std;
     *   S: source vertex to start traversing graph with
     *   V: number of vertices
     */
+
+// bit more time consuming than extra but more useful when your graph contains the negative cycle.
+// time complexity -> O(E * V)
+
     vector<int> bellman_ford(int V, vector<vector<int>>& edges, int S) {
         
         vector<int>dist(V, 1e8);
