@@ -4,6 +4,8 @@
 #include<queue>
 using namespace std;
 
+// this problem can also be solved using Disjoint set Data Structure , go and check the code at gfg problem link above.
+
 int main()
 {
     
