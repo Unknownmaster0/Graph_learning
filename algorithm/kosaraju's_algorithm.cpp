@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-// problem link ->
+// problem link -> https://geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1
 
 // kosaraju's algorithm -> An algorithm to find the number of Strongly connected component in the graph.
 class solution{
