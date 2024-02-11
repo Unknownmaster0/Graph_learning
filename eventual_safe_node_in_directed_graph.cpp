@@ -77,37 +77,6 @@ using namespace std;
     }
 
     vector<int> eventualSafeNodes(int V, vector<int> adj[]) {
-/*        // BRUTFORCE APPROACH
-        vector<int>ans;
-        vector<int>terminal;
-        
-        for(int i = 0; i<V; i++){
-            
-            // this is the terminal nodes.
-            if(adj[i].size() == 0 ){
-                
-                terminal.push_back(i);
-                ans.push_back(i);
-            }
-        }
-        
-        for(int i = 0; i<V; i++)
-        {
-            if(adj[i].size() == 1){
-                
-                for(int j = 0; j<terminal.size(); j++){
-                    
-                    if(adj[i][0] == terminal[j]){
-                        
-                        ans.push_back(i);
-                    }
-                }
-            }
-        }
-        
-        sort(ans.begin(), ans.end());
-        return ans;
-     */
      
         vector<int>safeNode;
         vector<int>vis(V, 0);
