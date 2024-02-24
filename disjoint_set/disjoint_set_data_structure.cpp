@@ -74,7 +74,7 @@ public:
         else
         {
             parent[ultiParent_u] = ultiParent_v;
-            size[ultiParent_v] += ultiParent_u;
+            size[ultiParent_v] += size[ultiParent_u];
         }
     }
 };
